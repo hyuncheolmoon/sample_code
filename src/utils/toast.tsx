@@ -1,5 +1,4 @@
 import {toast as reactToast, ToastOptions, TypeOptions, ToastPosition} from 'react-toastify';
-// import { AxiosResponse } from 'axios';
 
 const toast = (() => {
     //  'info' | 'success' | 'warning' | 'error' | 'default';

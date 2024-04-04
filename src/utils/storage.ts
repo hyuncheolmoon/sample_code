@@ -1,5 +1,5 @@
-const storage = {
-    set: (key: string, _value: any) => {
+class storage {
+    static set = (key: string, _value: any) => {
         if (!key) {
             return false;
         }
@@ -9,8 +9,8 @@ const storage = {
         }
         localStorage.setItem(key, value);
         return true;
-    },
-    get: (key: string) => {
+    };
+    static get = (key: string) => {
         if (!key) {
             return false;
         }
@@ -26,13 +26,14 @@ const storage = {
             value = _value;
         }
         return value;
-    },
-    del: (key: string) => {
+    };
+    static del = (key: string) => {
         if (!localStorage.getItem(key)) {
             return undefined;
         }
         localStorage.removeItem(key);
         return true;
-    },
+    };
 }
+
 export default storage;

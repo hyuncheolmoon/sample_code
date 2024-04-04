@@ -1,10 +1,17 @@
-import React, { useState, useEffect, useCallback } from 'react';
-import { useNavigate } from 'react-router-dom';
-import styled from '@emotion/styled';
-
+import React, { useState, useEffect, useCallback } from "react";
+import { useNavigate, useLocation, useParams } from "react-router-dom";
+import toast from "../../utils/toast";
+import styled from "@emotion/styled";
 
 const Landing = () => {
   const navigate = useNavigate();
+  const location = useLocation();
+  const params = useParams();
+
+  console.log(params);
+  //useEffect(() => {
+  //  toast.success("dddd");
+  //}, []);
 
   /********************************************************************************************
    * SERVER REQUEST
@@ -13,11 +20,7 @@ const Landing = () => {
   /********************************************************************************************
    * RENDER
    *******************************************************************************************/
-  return (
-      <div>메인</div>
-          
-  );
+  return <div>랜딩 페이지 : pathname : {location.pathname}</div>;
 };
 
 export default Landing;
-
