@@ -1,17 +1,17 @@
-import axios from 'axios';
-import utils from '~/utils/utils';
-import cms from '~/utils/cms';
+import axios from "axios";
+// import utils from "~/utils/utils";
+// import cms from "~/utils/cms";
 
 const setupAxiosInterceptors = () => {
   try {
-    const onRequestSuccess = config => {
+    const onRequestSuccess = (config) => {
       return config;
     };
-    const onResponseSuccess = response => {
+    const onResponseSuccess = (response) => {
       return Promise.resolve(response);
     };
 
-    const onResponseError = error => {
+    const onResponseError = (error) => {
       return Promise.reject(error);
     };
 
