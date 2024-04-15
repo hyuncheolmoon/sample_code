@@ -1,7 +1,9 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
 import styled from "@emotion/styled";
+
 import AppRouter from "../routers/app-router";
+import { ContainerWrapper } from "../assets/styled";
 
 const AppContainer = () => {
   const location = useLocation();
@@ -17,16 +19,12 @@ const AppContainer = () => {
    * RENDER
    *******************************************************************************************/
   return (
-    <Wrapper ref={wrapper as React.RefObject<HTMLDivElement>}>
+    <ContainerWrapper ref={wrapper as React.RefObject<HTMLDivElement>}>
       app container
       <AppRouter />
-    </Wrapper>
+    </ContainerWrapper>
   );
 };
 
 export default AppContainer;
 
-const Wrapper = styled.div`
-  height: 100vh;
-  position: relative;
-`;

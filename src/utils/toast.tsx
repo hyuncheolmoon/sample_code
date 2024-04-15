@@ -2,7 +2,7 @@ import {toast as reactToast, ToastOptions, TypeOptions, ToastPosition} from 'rea
 
 const toast = (() => {
     //  'info' | 'success' | 'warning' | 'error' | 'default';
-    const toast = (text: string, variant: TypeOptions = 'default') => {
+    const _toast = (text: string, variant: TypeOptions = 'default') => {
         const options: ToastOptions = {
             autoClose: 5000,
             hideProgressBar: true,
@@ -41,25 +41,25 @@ const toast = (() => {
                 break;
         }
     };
-    toast.success = (text: string) => {
-        toast(text, 'success');
+    _toast.success = (text: string) => {
+        _toast(text, 'success');
     };
 
-    toast.info = (text: string) => {
-        toast(text, 'info');
+    _toast.info = (text: string) => {
+        _toast(text, 'info');
     };
 
-    toast.warn = (text: string) => {
-        toast(text, 'warning');
+    _toast.warn = (text: string) => {
+        _toast(text, 'warning');
     };
 
-    toast.error = (text: string) => {
-        toast(text, 'error');
+    _toast.error = (text: string) => {
+        _toast(text, 'error');
     };
 
-    toast.default = toast.info;
+    _toast.default = _toast.info;
 
-    return toast;
+    return _toast;
 })();
 
 export default toast;

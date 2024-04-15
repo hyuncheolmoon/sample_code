@@ -1,13 +1,20 @@
 import React from "react";
-import RootRouter from "./routers/root-router";
 import moment from "moment";
+
+import { ToastContainer } from "react-toastify";
+
+import ErrorBoundary from "./components/error-boundary";
+import RootRouter from "./routers/root-router";
 
 window.moment = moment;
 
 function Root() {
   return (
     <div>
-      <RootRouter />
+      <ErrorBoundary>
+        <ToastContainer limit={5} />
+        <RootRouter />
+      </ErrorBoundary>
     </div>
   );
 }

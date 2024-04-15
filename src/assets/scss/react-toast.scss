@@ -1,0 +1,34 @@
+:root {
+  //--toastify-color-info: #595959;
+  //--toastify-color-success: #07bc0c;
+  //--toastify-color-warning: #f1c40f;
+  //--toastify-color-error: #e74c3c;
+  //--toastify-color-transparent: rgba(255, 255, 255, 0.7);
+
+  //--toastify-icon-color-info: var(--toastify-color-info);
+  //--toastify-icon-color-success: var(--toastify-color-success);
+  //--toastify-icon-color-warning: var(--toastify-color-warning);
+  //--toastify-icon-color-error: var(--toastify-color-error);
+  //--toastify-color-info: #606060;
+}
+
+.Toastify__toast-container {
+  font-weight: 400;
+
+  .Toastify__toast--default {
+    background: #606060;
+    color: #fff;
+  }
+
+  .Toastify__toast {
+    .Toastify__toast-icon {
+      margin-inline-end: 15px;
+    }
+
+    .Toastify__toast-body {
+      white-space: pre-wrap;
+
+    }
+
+  }
+}
