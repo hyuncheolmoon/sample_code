@@ -1,10 +1,10 @@
 const size = {
     height: {
         header: 70,
-    }
+    },
     width: {
         nav: 250,
-    }
+    },
     zIndex: {
         1000: 1000,
         1001: 1001,
