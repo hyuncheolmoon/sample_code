@@ -1,6 +1,6 @@
 {
-  "name": "sample_type_code",
-  "version": "0.1.0",
+  "name": "sample_code",
+  "version": "0.0.1",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.11.4",
@@ -26,6 +26,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
@@ -46,7 +47,7 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://hyuncheolmoon.github.io/sample_code/",
+  "homepage": "https://hyuncheolmoon.github.io/sample_code",
   "devDependencies": {
     "eslint": "^8.57.0",
     "eslint-config-prettier": "^9.1.0",
