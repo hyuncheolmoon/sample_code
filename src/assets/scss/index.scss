@@ -1,5 +1,10 @@
-@import './_react-toast';
+@import 'plugins/react-toast';
 
 body {
   margin: 0;
+}
+
+*{
+  box-sizing: border-box;
+
 }

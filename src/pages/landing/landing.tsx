@@ -20,7 +20,12 @@ const Landing = () => {
   /********************************************************************************************
    * RENDER
    *******************************************************************************************/
-  return <div>랜딩 페이지 : pathname : {location.pathname}</div>;
+  return (
+    <div>
+      랜딩 페이지 : pathname : {location.pathname}
+      <a href={"/app"}>바로가기</a>
+    </div>
+  );
 };
 
 export default Landing;

@@ -4,10 +4,10 @@ import DashboardPage from "../pages/dashboard/dashboard";
 
 const AppRouter = () => {
   return (
-    <Routes>
-      <Route path="/dashboard/*" element={<DashboardPage />} />
-      <Route path="/*" element={<Navigate to="dashboard" replace />} />
-    </Routes>
+      <Routes>
+        <Route path="/dashboard/*" element={<DashboardPage />} />
+        <Route path="/*" element={<Navigate to="dashboard" replace />} />
+      </Routes>
   );
 };
 
