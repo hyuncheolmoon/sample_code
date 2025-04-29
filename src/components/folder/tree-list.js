@@ -36,11 +36,11 @@ import {
 import { setPresetProject } from '../../redux/actions/project';
 import { registerNewUser } from '../../redux/actions/user';
 
-import Folder from './Model/folder';
-import FolderOptions from './Popup/FolderOptions';
+import Folder from './model/folder';
+import FolderOptions from './popup/folder-options';
 
 // import CreateFolder from './Header/CreateFolder';
-import EditFolderName from './EditFolderName';
+import EditFolderName from './edit-folder-name';
 
 import bee from '../../utils/bee';
 
