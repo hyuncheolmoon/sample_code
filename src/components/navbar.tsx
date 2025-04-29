@@ -4,7 +4,7 @@ import { filter, forEach } from "lodash";
 
 import { ViewList, MenuOpen } from "@mui/icons-material";
 
-import { NavList } from "./templetes";
+// import { NavList } from "./templetes";
 
 import { palette, width, height } from "../constants";
 
@@ -73,7 +73,7 @@ const Navbar = ({ navData, isEdge, toggleEdgeMode }: TNavbarProps) => {
           </MiniNavBtn>
         </NavHeader>
         <div>
-          <NavList miniSize={miniSize} navList={navList} />
+          {/* <NavList miniSize={miniSize} navList={navList} /> */}
         </div>
       </NavLayout>
     </NavbarDrawer>

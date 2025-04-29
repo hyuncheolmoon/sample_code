@@ -1,4 +1,4 @@
 import Confirm from "./confirm";
-import NavList from "./nav-list";
+// import NavList from "./nav-list";
 
-export { Confirm, NavList };
+export { Confirm };
